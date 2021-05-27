@@ -9,3 +9,5 @@
   - A detailed description of how to use the repo
   - A DOI/release number for your repo (separate from resulting paper)
   - 
+
+Run this thing here, if you want: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/MadelineJC/repro_workshop/main) 
