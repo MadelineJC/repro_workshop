@@ -3,7 +3,7 @@
 library(ggplot2)
 library(here)
 
-setosa_subset <- read_csv(here("./output/setosa_subset_data.csv"))
+setosa_subset <- read.csv(here("./output/setosa_subset_data.csv"))
 
 # further subset data
 setosa_subset = setosa_subset[which(setosa_subset$Petal.Width > 0.2), ]
@@ -24,4 +24,4 @@ new_data = data.frame(Petal.Length = seq(1.3, 1.9, 0.1),
                       Petal.Width = seq(0.3, 0.9, 0.1))
 new_data$prediction = predict(setosa_model, new_data, type = "response")
 
-write_csv(new_data, here("./output/new_data_for_prediction.csv"))
+write.csv(new_data, here("./output/new_data_for_prediction.csv"))

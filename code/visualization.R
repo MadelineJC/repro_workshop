@@ -3,7 +3,7 @@
 library(ggplot2)
 library(here)
 
-setosa_subset <- read_csv(here("./output/setosa_subset_data.csv"))
+setosa_subset <- read.csv(here("./output/setosa_subset_data.csv"))
 
 # make and save a simple plot
 simple_fig = ggplot(data = setosa_subset) +
@@ -12,7 +12,7 @@ simple_fig = ggplot(data = setosa_subset) +
   theme_bw()
 ggsave(here('./figs/simple_iris_fig.png'), simple_fig)
 
-new_data <- read_csv(here("./output/new_data_for_prediction.csv"))
+new_data <- read.csv(here("./output/new_data_for_prediction.csv"))
 
 # plot prediction
 prediction_plot = ggplot(data = new_data) +

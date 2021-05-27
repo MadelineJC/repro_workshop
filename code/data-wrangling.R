@@ -25,4 +25,4 @@ species_subset = function(data, species) {
 }
 
 setosa_subset = species_subset(data, "setosa")
-write_csv(setosa_subset, here("./output/setosa_subset_data.csv"))
+write.csv(setosa_subset, here("./output/setosa_subset_data.csv"))
