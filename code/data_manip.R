@@ -11,7 +11,7 @@ library(here) # here() starts at /Users/mjarviscross/Desktop/GitHub/repro_worksh
   # data <- read_csv(here("./pathname_after_end_of_here"))
 # You can also write a csv this way
   # write_csv(data, here("./pathname_after_end_of_here"))
-library(tidyverse)
+library(ggplot2)
 # Rules for naming conventions
   # (1) Consistency 
     # Ex. objectOne: camel case
